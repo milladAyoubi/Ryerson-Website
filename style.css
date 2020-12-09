@@ -230,7 +230,6 @@ p {
 .stats {
   
     padding-top: 50px;
-
     text-align: center;
     
 }
@@ -272,19 +271,10 @@ p {
      
  
  }
-.main::before {
-   content: '';
-    position: absolute;
-    height: 80px;
-    right: 0;
-    left: 0;
-    background-color: var(--primary-color);
-    transform: skewY(-3deg);
-    -webkit-transform: skewY(-3deg);
-    -moz-transform: skewY(-3deg);
-    -ms-transform: skewY(-3deg);
-    z-index: 1;
-    
 
-}
 
+ .main {
+     background-color: var(--primary-color);
+        
+     height: 200px;
+ }
