@@ -256,17 +256,18 @@ p {
 
 
 
-.main::after {
+.mainTab::before {
     content: '';
+    margin: 100px 0px;
      position: absolute;
      height: 80px;
      right: 0;
      left: 0;
      background-color: var(--primary-color);
-     transform: skewY(3deg);
-     -webkit-transform: skewY(3deg);
-     -moz-transform: skewY(3deg);
-     -ms-transform: skewY(3deg);
+     transform: skewY(-3deg);
+     -webkit-transform: skewY(-3deg);
+     -moz-transform: skewY(-3deg);
+     -ms-transform: skewY(-3deg);
 
      
  
@@ -274,7 +275,45 @@ p {
 
 
  .main {
+    position: relative;
+    top:140px;  
      background-color: var(--primary-color);
-        
-     height: 200px;
+     height: 280px;
  }
+
+
+ .tabContent {
+     text-align: center;
+     color: white;
+     padding: 20px 0px;
+
+ }
+
+
+ .tabContent p{
+ 
+    margin: 20px 0px;
+    
+    
+
+}
+
+ .tabContent a {
+ 
+     margin: 20px 0px;
+     color: var(--primary-color);
+     background-color: var(--tertrity-color);
+     transition: 0.2s;
+ }
+
+ 
+ .tabContent a:hover {
+  
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+
