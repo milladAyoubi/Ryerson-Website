@@ -179,7 +179,6 @@ p {
 
 .page-form {
     position: relative;
- 
     width: 400px;
     background-color: white;
     border-radius: 10px;
@@ -224,18 +223,12 @@ p {
    
 }
 
-
-
-
 .stats {
   
     padding-top: 50px;
     text-align: center;
     
 }
-
-
-
 
 .grid-2 {
     display: grid;
@@ -317,3 +310,117 @@ p {
 }
 
 
+.mainTab::after {
+    content: '';
+    margin: 100px 0px;
+     position: absolute;
+     height: 80px;
+     right: 0;
+     left: 0;
+     background-color: var(--primary-color);
+     transform: skewY(3deg);
+     -webkit-transform: skewY(3deg);
+     -moz-transform: skewY(3deg);
+     -ms-transform: skewY(3deg);
+     z-index: -1;
+
+     
+ 
+ }
+
+ 
+.secondaryTab::before {
+    content: '';
+    margin: 180px 0px;
+     position: absolute;
+     height: 100px;
+     right: 0;
+     left: 0;
+     background-color: var(--secondary-color);
+     transform: skewY(3deg);
+     -webkit-transform: skewY(3deg);
+     -moz-transform: skewY(3deg);
+     -ms-transform: skewY(3deg);
+     z-index: -1;
+
+     
+ 
+ }
+
+.second {
+    position: relative;
+    top:240px;  
+     background-color: var(--secondary-color);
+     height: 280px;
+}
+
+
+
+
+@media only screen and (max-width: 800px) {
+
+
+    .navbar {
+        height: 100px;
+    } 
+
+    .navbar h1 {
+      font-size: 20px;
+    }
+
+   .showcase {
+     
+       text-align: center;
+   }
+
+    .showcase p{
+        margin-bottom: 26px;
+        font-size: 14px;
+    }
+
+    .showcase h1 {
+        font-size: 27px;
+    }
+
+    .showcase .btn {
+     
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+
+    .page-form {
+     
+        width:80%;
+        height: 200px;
+        margin: auto;
+       text-align: center;
+    }
+
+    .page-form .form {
+        margin: 5px 0px;
+
+    }
+
+    .grid {
+        display: inline-block;
+    }
+    .page-form h2 {
+        font-size: 20px;
+    }
+
+   
+.page-form input[type='email'],
+.page-form input[type='text'] {
+    width: 100px;
+    font-size: 10px;
+}
+
+    .main h2,p  {
+        overflow: hidden;
+        font-size: 20px;
+    }
+
+    .grid-2 {
+        display: inline-block;
+    }
+  }
