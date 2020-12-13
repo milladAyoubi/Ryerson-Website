@@ -419,6 +419,7 @@ p {
 
 
     .grid {
+        display: block;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
     }
@@ -508,8 +509,10 @@ p {
   /*Mobile*/
 
 @media (max-width: 500px) {
-
- 
+.grid {
+    display: block;
+    
+}
     .Tab1 h3,p{
         font-size: 18px;
      }
@@ -529,6 +532,7 @@ p {
 
     .navbar ul {
         padding: 10px;
+        font-size: 10px;
         background-color: rgba(0,0,0,0.1);
     }
 
@@ -545,13 +549,6 @@ p {
 
    
 
-    .page-form {
-     
-        width:20%;
-        height: 200px;
-        margin: auto;
-       text-align: center;
-    }
 
     .page-form .form {
         margin: 5px 0px;
