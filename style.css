@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 :root {
-    --primary-color:#4056A1;
+    --primary-color:#84CEEB;
     --secondary-color: #5CDB95;
     --tertrity-color: #FFE400;
 }
@@ -513,13 +513,23 @@ p {
     display: block;
     
 }
-    .Tab1 h3,p{
-        font-size: 18px;
-     }
 
-     .Tab2 h3,p{
-        font-size: 14px;
-     }
+.tabContent {
+    padding: 30px 0px;
+   
+}
+.tabContent a {
+    margin: 0px;
+}
+
+.tabContent h3 {
+    font-size: 16px;
+}
+
+.tabContent p {
+    font-size: 12px;
+}
+
 
 
     .navbar {
