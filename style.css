@@ -404,25 +404,27 @@ p {
         font-size: 18px;
      }
 
-    .grid-2 {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-
-    }
-
+    
 
     
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
 
 
-
-    .grid {
+    .grid  {
         display: block;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
+
     }
+
+    .grid-2 {
+            display: inline-block; 
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;     
+    }
+  
     .navbar {
         height: 100px;
     } 
@@ -605,3 +607,7 @@ p {
         font-size: 20px;
     }
   }
+
+
+  
+ 
