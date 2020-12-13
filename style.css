@@ -110,6 +110,7 @@ p {
 
 .showcase {
     padding-top: 60px;
+  
     color:white;
     height: 400px;
     background-color: var(--primary-color) ;
@@ -251,7 +252,8 @@ p {
 
 .mainTab {
     
-     height: 120vh;
+     height: 180vh;
+     padding: 80px 0px;
      color: white;
      background-attachment: fixed;
      background-position: center;
@@ -264,24 +266,34 @@ p {
  
  }
 
+ 
+
 
  .main {
+ 
      margin-top:100px;
      height: 280px;
      
  }
 
- .Tab1.container.tabContent  {
-        text-align: left;
-        background-color: var(--primary-color);
+ .Tab1  {
+        width:90%;
+        border-radius: 10px;
+        margin: 0 auto;
+        background-color: var();
+        background-color: rgba(132,206,235, 0.3);
         
  
 
  }
 
- .Tab2.container.tabContent {
+ .Tab2 {
+    width:90%;
+    border-radius: 10px;
      text-align: right;
+     margin: 0 auto;
      background-color: var(--secondary-color);
+     background-color:rgba(132,206,235, 0.3);
    
    
     
@@ -383,9 +395,13 @@ p {
 
 /*Minimize*/
 
-@media (max-width: 900px) {
-    .tabContent h2 {
-        font-size: 22px;
+@media (max-width: 1000px) {
+    .Tab1 h3,p{
+        font-size: 18px;
+     }
+
+     .Tab2 h3,p{
+        font-size: 18px;
      }
 
     .grid-2 {
@@ -492,7 +508,16 @@ p {
   /*Mobile*/
 
 @media (max-width: 500px) {
+
  
+    .Tab1 h3,p{
+        font-size: 18px;
+     }
+
+     .Tab2 h3,p{
+        font-size: 14px;
+     }
+
 
     .navbar {
         height: 110px;
@@ -522,7 +547,7 @@ p {
 
     .page-form {
      
-        width:80%;
+        width:20%;
         height: 200px;
         margin: auto;
        text-align: center;
