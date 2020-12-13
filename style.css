@@ -147,7 +147,6 @@ p {
 }
 
 .showcase h1 {
-   
     font-size: 40px;
 
 }
@@ -231,6 +230,7 @@ p {
 }
 
 .grid-2 {
+    width: 100%;
     display: grid;
     margin: 50px 0;
     grid-template-columns: repeat(3, 1fr);
@@ -241,7 +241,7 @@ p {
 
 
 .grid-2 h3 {
-    width: 340px;
+    width: 100%;
     font-size: 26px;
     font-weight: bold;
 }
@@ -249,18 +249,16 @@ p {
 
 
 
-.mainTab::before {
-    content: '';
-    margin: 100px 0px;
-     position: absolute;
-     height: 80px;
-     right: 0;
-     left: 0;
-     background-color: var(--primary-color);
-     transform: skewY(-3deg);
-     -webkit-transform: skewY(-3deg);
-     -moz-transform: skewY(-3deg);
-     -ms-transform: skewY(-3deg);
+.mainTab {
+    
+     height: 120vh;
+     color: white;
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-image: url('backgrounds/chem.jpg');
+    z-index: -2;
 
      
  
@@ -268,26 +266,35 @@ p {
 
 
  .main {
-    position: relative;
-    top:140px;  
-     background-color: var(--primary-color);
+     margin-top:100px;
      height: 280px;
+     
  }
 
+ .Tab1.container.tabContent  {
+        text-align: left;
+        background-color: var(--primary-color);
+        
+ 
+
+ }
+
+ .Tab2.container.tabContent {
+     text-align: right;
+     background-color: var(--secondary-color);
+   
+   
+    
+
+ }
 
  .tabContent {
-     text-align: center;
-     color: white;
-     padding: 20px 0px;
-
+     padding: 30px;
  }
-
 
  .tabContent p{
  
-    margin: 20px 0px;
-    
-    
+    margin: 10px 0px;
 
 }
 
@@ -310,59 +317,196 @@ p {
 }
 
 
-.mainTab::after {
-    content: '';
-    margin: 100px 0px;
-     position: absolute;
-     height: 80px;
-     right: 0;
-     left: 0;
-     background-color: var(--primary-color);
-     transform: skewY(3deg);
-     -webkit-transform: skewY(3deg);
-     -moz-transform: skewY(3deg);
-     -ms-transform: skewY(3deg);
-     z-index: -1;
 
-     
- 
- }
 
- 
-.secondaryTab::before {
-    content: '';
-    margin: 180px 0px;
-     position: absolute;
-     height: 100px;
-     right: 0;
-     left: 0;
-     background-color: var(--secondary-color);
-     transform: skewY(3deg);
-     -webkit-transform: skewY(3deg);
-     -moz-transform: skewY(3deg);
-     -ms-transform: skewY(3deg);
-     z-index: -1;
+/*Skills Tab*/
 
-     
- 
- }
 
-.second {
-    position: relative;
-    top:240px;  
-     background-color: var(--secondary-color);
-     height: 280px;
+.finalTab {
+    margin: 80px 0px 120px 0px;
+    height: 200px; 
+    width: 100%;
+    text-align: center;
+
+
+}
+
+.finalTab .flex {
+    flex-wrap: wrap ;
 }
 
 
 
+.card {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    width:120px;
+    height: 160px;
+    padding: 20px;
+    border-radius: 5px;
+    align-items: center;
+    transition: 1.2s;
+}
 
-@media only screen and (max-width: 800px) {
+.card img{
+    overflow: hidden;
+}
+
+.card p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+    transition:0.4s;
+}
 
 
+/* Footer */
+
+
+.footer {
+    position: relative;
+    top: 100px;
+    padding: 40px;
+    color: white;
+    width: 100%;
+    height: 160px;
+    
+    background-color: #1d284e;
+}
+
+
+
+/*Responsive Design For Device Screens*/
+
+
+/*Minimize*/
+
+@media (max-width: 900px) {
+    .tabContent h2 {
+        font-size: 22px;
+     }
+
+    .grid-2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+
+    }
+
+
+    
+}
+
+@media (max-width: 768px) {
+
+
+
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
     .navbar {
         height: 100px;
     } 
+
+    .navbar h1 {
+      font-size: 20px;
+    }
+
+   .showcase {
+        height: auto;
+       text-align: center;
+   }
+
+   .showcase .btn {
+     
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+   .page-form {
+    padding-top: 20px;
+    justify-self: center;
+    width:80%;
+    height: 200px;
+    margin: 40px;
+   text-align: center;
+}
+    
+    
+
+    .page-form .form {
+        margin: 5px 0px;
+
+    }
+
+   
+    .page-form h2 {
+        font-size: 20px;
+    }
+
+    .page-form .btn {
+        font-size: 8px;
+        width: 50%;
+    }
+
+   
+.page-form input[type='email'],
+.page-form input[type='text'] {
+    width: 100px;
+    font-size: 10px;
+}
+
+    .main h2,p  {
+        overflow: hidden;
+        font-size: 20px;
+    }
+
+    .second h2,p{
+        overflow: hidden;
+        font-size: 20px;
+    }
+
+    .finalTab .card {
+        width: 80px;
+        height: 100px;
+        font-size: 10px;
+        padding:5px;
+        
+    }
+
+    .finalTab .card p {
+        font-size: 12px;
+    }
+
+   
+    .footer h1,p{
+       
+        font-size: 20px;
+    }
+  }
+
+
+
+  /*Mobile*/
+
+@media (max-width: 500px) {
+ 
+
+    .navbar {
+        height: 110px;
+    } 
+
+    .navbar .flex {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        padding: 10px;
+        background-color: rgba(0,0,0,0.1);
+    }
+
 
     .navbar h1 {
       font-size: 20px;
@@ -373,20 +517,8 @@ p {
        text-align: center;
    }
 
-    .showcase p{
-        margin-bottom: 26px;
-        font-size: 14px;
-    }
 
-    .showcase h1 {
-        font-size: 27px;
-    }
-
-    .showcase .btn {
-     
-        margin-bottom: 20px;
-        font-size: 18px;
-    }
+   
 
     .page-form {
      
@@ -401,9 +533,7 @@ p {
 
     }
 
-    .grid {
-        display: inline-block;
-    }
+    
     .page-form h2 {
         font-size: 20px;
     }
@@ -420,7 +550,26 @@ p {
         font-size: 20px;
     }
 
+    .tabContent {
+       text-align: center;
+    }
+
+    .tabContent h2 {
+        font-size: 14px;
+    }
+
+    .second h2,p{
+        overflow: hidden;
+        font-size: 20px;
+    }
+
     .grid-2 {
         display: inline-block;
+    }
+
+    
+    .footer h1,p{
+       
+        font-size: 20px;
     }
   }
