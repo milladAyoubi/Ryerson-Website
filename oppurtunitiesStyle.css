@@ -78,6 +78,11 @@
    
 }
 
+
+.dataSet {
+    padding: 10px;
+}
+
 .data-container {
     padding: 10px;
 }
@@ -98,6 +103,11 @@
 
 .oppurtunities img {
   width: 100%;
+}
+
+
+.dataSet {
+    padding: 5px;
 }
 
 
