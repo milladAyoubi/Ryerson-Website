@@ -107,8 +107,18 @@
 
 
 .dataSet {
-    padding: 5px;
+    padding: 0px;
+    margin: 5px;
+
 }
+
+.data-container {
+    font-size: 12px;
+    margin: 0px;
+    padding: 5px;
+
+}
+
 
 
 }
