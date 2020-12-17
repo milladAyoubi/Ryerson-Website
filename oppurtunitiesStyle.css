@@ -38,8 +38,8 @@
     text-align: center;
     grid-template-columns: auto auto auto auto;
     margin: 30px;
-    border: 2px solid black;
-    border-radius: 10px;
+    border: 2px solid rebeccapurple;
+    border-radius: 5px;
     padding: 20px;
 }
 
@@ -105,6 +105,10 @@
   width: 100%;
 }
 
+
+.dataSet h1 {
+    font-size: 20px;
+}
 
 .dataSet {
     padding: 0px;
