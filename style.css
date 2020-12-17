@@ -97,7 +97,7 @@ p {
     grid-template-columns: 2fr 1fr;
     gap: 30px;
     justify-content: center;
-    height: 100%;
+   
 
 }
 
@@ -405,12 +405,7 @@ p {
 @media (max-width: 1000px) {
 
 
-    .grid  {
-        display: block;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-
-    }
+   
 
     .grid-2 {
             display: inline-block; 
@@ -529,10 +524,12 @@ p {
 
     .navbar {
         height: 110px;
+        position:relative;
+        
     } 
 
     .navbar .flex {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .navbar ul {
