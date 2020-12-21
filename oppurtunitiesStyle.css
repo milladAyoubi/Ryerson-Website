@@ -3,7 +3,7 @@
 }
 
 .oppurtunities {
-    text-align: center;
+    text-align: center; 
     color: white;
     padding: 40px 0px;
     margin: auto;
@@ -83,6 +83,7 @@
 .cardInfo {
 
     background-image: linear-gradient(110deg, #05c5bb,#7dc1ca );
+ 
     padding: 10px;
     color: white;
     width: 100%;
@@ -107,25 +108,22 @@
     font-size: 16px;
 }
 
-
-.cardInfo a  {
+.btn-outline {
+    border-radius: 0px;
   
-   
-    border: 2px solid var(--tertrity-color);
-    color: var(--tertrity-color);
-    border-radius: 25px;
-    background-color: transparent;
-    margin: 10px;
+ 
+    color: white;
+    background-image: linear-gradient(140deg, #ffafbd ,#ffc3a0 );
     transition: 0.4s;
 }
 
-.cardInfo a:hover  {
+
+.card .btn:hover  {
   
+
    
-    transform: scale(1.1);
-    font-size: bold;
-    color:white;
-    background-color: var(--tertrity-color);
+    
+    transform: scaleX(1.1);
     transition: 0.4s;
 
 }
@@ -173,9 +171,6 @@
 
 
 }
-
-
-
 
 @media (max-width: 500px) {
 
