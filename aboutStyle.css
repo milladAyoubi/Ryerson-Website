@@ -51,3 +51,15 @@
 
 
 
+
+
+@media (max-width: 500px) { 
+
+
+    .aboutImg img {
+        margin: 10px 0px;
+       width: 100%;
+    }
+    
+    
+}
