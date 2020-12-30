@@ -10,48 +10,147 @@
 }
 
 .about {
-    
-    display: inline-block;
+
     text-align: center;
-    justify-content: center;
     width: 100%;
     color: white;
-    padding-top: 40px;
-   
+    padding: 100px;
     background-image: linear-gradient(90deg, #05c5bb,#aceff8 );
 
 }
 
 
 .aboutText {
-    margin: 0 auto;
-    width: 60%;
+    width: 70%;
+    margin: auto;
+
+   
+
 }
 
-.textContent {
-    margin:auto;
+
+
+.aboutMain {
+    padding: 40px;
+}
+
+
+.imgContainer {
+    margin: auto;
+    width: 70%;
+    text-align: center;
+   
+   
 }
 
 
 
 .aboutImg {
-    
+    justify-content: space-between;
     display: inline-block;
-    justify-content: center;
-    width: 60%;
-    margin-top: 30px;
-    text-align: center;
+    justify-items: center;
+    row-gap: 40px;
+
+
 }
-.aboutImg img {
-    justify-self: flex-end;
-    border-radius: 5px;
+.imgTab {
+    position: relative;
+    overflow: hidden;
     margin: 10px 10px;
+    row-gap: 10px;
+ 
+}
+
+
+.imgTab .imgLink {
+    position: absolute;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(52, 255, 255, 0.8);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.imgTab:hover  .imgLink{
+    bottom: 0; 
+
+}
+
+.imgTab .imgLink {
+    display: block;
+    
+   
+}
+
+.imgLink a {
+  
+}
+
+
+.imgLink p {
+   width: 100%;
+    font-weight:bold;
+    color: white;
+    padding: 15px;
+ 
+}
+
+
+
+
+.aboutImg img {
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
     width: 300px;
 }
 
+.aboutFeatures {
+    margin: 40px 0px;
+}
+
+.aboutFeatures .grid {
+    grid-template-columns: 1fr 1fr;
+}
+
+.feature {
+    border-radius: 5px;
+    padding: 30px 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: 0.2s;
+}
 
 
 
+.feature img {
+    margin-right: 20px;
+    border-radius: 5px;
+    width: 30%;
+}
+
+
+.aboutFeatures .mainFeature{
+
+    display: block;
+    text-align: center;
+    height: 200px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 5px;
+    padding: 10px 20px 0px 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+
+}
+
+
+.feature:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+}
 
 @media (max-width: 500px) { 
 
