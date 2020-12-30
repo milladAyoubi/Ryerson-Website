@@ -1,26 +1,53 @@
-.navbar {
-    background-color: rebeccapurple;
+
+:root {
+    --primary-color:#84CEEB;
+    --secondary-color: #5CDB95;
+    --tertrity-color: #FFE400;
 }
 
-.oppurtunities {
-    text-align: center; 
-    color: white;
-    padding: 40px 0px;
-    margin: auto;
-    height: 300px;
-    background-color: rebeccapurple;
+.navbar {
+    background-color: var(--secondary-color);
+}
 
+.about {
+    
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    padding-top: 40px;
+   
+    background-color: var(--secondary-color) ;
+
+}
+
+
+.aboutText {
+    margin: 0 auto;
+    width: 60%;
 }
 
 .textContent {
     margin:auto;
 }
 
-.oppurtunities img {
+
+
+.aboutImg {
+    margin-top: 30px;
+    text-align: center;
+}
+.aboutImg img {
     justify-self: flex-end;
-    border-radius: 20px;
-    margin: 20px 0px;
+    border-radius: 5px;
+    margin: 10px 10px;
     width: 300px;
 }
 
+
+.btn {
+    background-color: rgb(61, 61, 248);
+    border: none;
+}
 

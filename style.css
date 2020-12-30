@@ -104,7 +104,7 @@ p {
 
 /* Page Text */
 
-.page-items .btn {
+ .btn {
     align-content: center;
     border: 1px solid var(--tertrity-color);
     background-color: transparent;
@@ -114,7 +114,8 @@ p {
 
 }
 
-.page-items .btn:hover {
+ .btn:hover {
+     color: var(--tertrity-color);
     transform: scale(0.8);
     transition: 0.2s;
 
