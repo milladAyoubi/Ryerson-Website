@@ -220,20 +220,19 @@ p {
 }
 
 .mainTab {
-    height: 180vh;
-    padding: 80px 0px;
+    height: auto;
+    padding: 100px 0px;
     color: white;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url('backgrounds/chem.jpg');
-    z-index: -2;
 }
 
 .main {
-    margin-top: 100px;
-    height: 280px;
+    margin: 80px 0px;
+    height: auto;
 }
 
 .Tab1 {
