@@ -1,18 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-
 :root {
-    --primary-color:#84CEEB;
+    --primary-color: #84CEEB;
     --secondary-color: #5CDB95;
     --tertrity-color: #FFE400;
 }
 
 * {
     box-sizing: border-box;
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
     font-family: lato;
 }
-
 
 html {
     scroll-behavior: smooth;
@@ -22,12 +20,12 @@ ul {
     list-style-type: none;
 }
 
-
 a {
     text-decoration: none;
     color: #333;
 }
- h2 {
+
+h2 {
     font-weight: 300;
     line-height: 1.2;
     margin: 0px 0px;
@@ -35,18 +33,12 @@ a {
 
 p {
     margin: 10px 0px;
-
 }
-
-
-
 
 .navbar {
     background-color: var(--primary-color);
     color: white;
     height: 58px;
-
-
 }
 
 .navbar .flex {
@@ -58,28 +50,24 @@ p {
 }
 
 .navbar h1 {
-   color: var(--tertrity-color);
+    color: var(--tertrity-color);
     margin-left: -30px;
 }
 
 .navbar a {
     text-decoration: none;
     color: white;
-    padding:10px;
+    padding: 10px;
     margin: 0px 5px;
 }
-
-
 
 .navbar a:hover {
     color: var(--tertrity-color);
     border-bottom: 2px var(--tertrity-color) solid;
-
 }
 
 
 /* Utils */
-
 
 .container {
     max-width: 1100px;
@@ -91,18 +79,14 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height:100%;
-
+    height: 100%;
 }
-
 
 .grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 30px;
     justify-content: center;
-   
-
 }
 
 
@@ -115,13 +99,11 @@ p {
     color: var(--tertrity-color);
     font-size: 28px;
     transition: 1.0s;
-
 }
 
 .page-items .btn:hover {
     transform: scale(0.8);
     transition: 0.2s;
-
 }
 
 
@@ -129,13 +111,11 @@ p {
 
 .showcase {
     padding-top: 60px;
-  
-    color:white;
+    color: white;
     height: 400px;
-    background-color: var(--primary-color) ;
+    background-color: var(--primary-color);
     position: relative;
 }
-
 
 .showcase::after {
     content: '';
@@ -149,7 +129,6 @@ p {
     -webkit-transform: skewY(-3deg);
     -moz-transform: skewY(-3deg);
     -ms-transform: skewY(-3deg);
-    
 }
 
 .showcase::before {
@@ -168,28 +147,23 @@ p {
 
 .showcase h1 {
     font-size: 40px;
-
 }
 
 .showcase p {
     margin: 30px 0px;
 }
 
-
 .showcase .grid {
     grid-template-columns: 55% 45%;
     gap: 30px;
-
 }
-
-
 
 .page-form {
     position: relative;
     width: 400px;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 3px 20px rgba(0,0,0,0.5);
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
     padding: 40px;
     margin: 10px;
     height: 340px;
@@ -200,7 +174,6 @@ p {
 .page-form h2 {
     color: var(--primary-color);
 }
-
 
 .page-form .form {
     margin: 30px 0px;
@@ -213,9 +186,7 @@ p {
     width: 100%;
     padding: 8px;
     font-size: 20px;
-
 }
-
 
 .page-form input:focus {
     outline: none;
@@ -223,18 +194,14 @@ p {
 
 .page-form .btn {
     font-size: 14px;
-   border-radius: 5px;
-   width: 100px;
+    border-radius: 5px;
+    width: 100px;
     display: inline-block;
-  
-   
 }
 
 .stats {
-  
     padding-top: 50px;
     text-align: center;
-    
 }
 
 .grid-2 {
@@ -244,9 +211,7 @@ p {
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     text-align: center;
-    
 }
-
 
 .grid-2 h3 {
     width: 100%;
@@ -254,80 +219,56 @@ p {
     font-weight: bold;
 }
 
-
-
-
 .mainTab {
-    
-     height: 180vh;
-     padding: 80px 0px;
-     color: white;
-     background-attachment: fixed;
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-image: url('backgrounds/chem.jpg');
+    height: 180vh;
+    padding: 80px 0px;
+    color: white;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('backgrounds/chem.jpg');
     z-index: -2;
-
-     
- 
- }
-
- 
-
-
- .main {
- 
-     margin-top:100px;
-     height: 280px;
-     
- }
-
- .Tab1  {
-        width:90%;
-        border-radius: 10px;
-        margin: 0 auto;
-        background-color: var();
-        background-color: rgba(132,206,235, 0.3);
-        
- 
-
- }
-
- .Tab2 {
-    width:90%;
-    border-radius: 10px;
-     text-align: right;
-     margin: 0 auto;
-     background-color: var(--secondary-color);
-     background-color:rgba(132,206,235, 0.3);
-   
-   
-    
-
- }
-
- .tabContent {
-     padding: 30px;
- }
-
- .tabContent p{
- 
-    margin: 10px 0px;
-
 }
 
- .tabContent a {
- 
-     margin: 20px 0px;
-     color: var(--primary-color);
-     background-color: var(--tertrity-color);
-     transition: 0.2s;
- }
+.main {
+    margin-top: 100px;
+    height: 280px;
+}
 
- 
- .tabContent a:hover {
-  
+.Tab1 {
+    width: 90%;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-color: var();
+    background-color: rgba(132, 206, 235, 0.3);
+}
+
+.Tab2 {
+    width: 90%;
+    border-radius: 10px;
+    text-align: right;
+    margin: 0 auto;
+    background-color: var(--secondary-color);
+    background-color: rgba(132, 206, 235, 0.3);
+}
+
+.tabContent {
+    padding: 30px;
+}
+
+.tabContent p {
+    margin: 10px 0px;
+}
+
+.tabContent a {
+    margin: 20px 0px;
+    color: var(--primary-color);
+    background-color: var(--tertrity-color);
+    transition: 0.2s;
+}
+
+.tabContent a:hover {
     color: white;
     background-color: transparent;
     border: 1px solid white;
@@ -336,52 +277,42 @@ p {
 }
 
 
-
-
 /*Skills Tab*/
 
-
 .finalTab {
-
     padding: 80px 0px;
     text-align: center;
-
-
 }
 
 .cardContainer {
-   
     width: 100%;
-    display:flex;
-    justify-content: space-around;
+    display: flex;
+    gap: 80px;
+    justify-content: center;
     margin: 40px auto;
 }
 
 .card {
-
     padding: 20px 0px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
-    width:150px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    width: 150px;
     height: 200px;
     border-radius: 5px;
     align-items: center;
     transition: 1.2s;
 }
 
-.card img{
+.card img {
     width: 60%;
-
 }
-
 
 .card:hover {
     transform: translateY(-10px);
-    transition:0.4s;
+    transition: 0.4s;
 }
 
 
 /* Footer */
-
 
 .footer {
     display: inline-block;
@@ -391,249 +322,166 @@ p {
     background-color: #1d284e;
 }
 
-
 .links {
     float: right;
 }
+
 .links img {
     padding: 0px 5px;
 }
 
 
-/*Responsive Design For Device Screens*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Minimize*/
 
-
-
 @media (max-width: 1000px) {
-
-
-   
-
     .grid-2 {
-            display: inline-block; 
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr;     
+        display: inline-block;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
     }
-  
     .navbar {
         height: 100px;
-    } 
-
-    .navbar h1 {
-      font-size: 20px;
     }
-
-   .showcase {
+    .navbar h1 {
+        font-size: 20px;
+    }
+    .showcase {
         height: auto;
-       text-align: center;
-   }
-
-   .showcase .btn {
-     
-    margin-bottom: 20px;
-    font-size: 18px;
-}
-
-   .page-form {
-    padding-top: 20px;
-    justify-self: center;
-    width:80%;
-    height: 200px;
-    margin: 40px;
-   text-align: center;
-}
-    
-    
-
+        text-align: center;
+    }
+    .showcase .btn {
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+    .page-form {
+        padding-top: 20px;
+        justify-self: center;
+        width: 80%;
+        height: 200px;
+        margin: 40px;
+        text-align: center;
+    }
     .page-form .form {
         margin: 5px 0px;
-
     }
-
-   
     .page-form h2 {
         font-size: 20px;
     }
-
     .page-form .btn {
         font-size: 8px;
         width: 50%;
     }
-
-   
-.page-form input[type='email'],
-.page-form input[type='text'] {
-    width: 100px;
-    font-size: 10px;
+    .page-form input[type='email'],
+    .page-form input[type='text'] {
+        width: 100px;
+        font-size: 10px;
+    }
+    .main h2,
+    p {
+        overflow: hidden;
+        font-size: 20px;
+    }
+    .second h2,
+    p {
+        overflow: hidden;
+        font-size: 20px;
+    }
+    .footer h1,
+    p {
+        font-size: 20px;
+    }
+    .cardContainer {
+        gap: 30px;
+    }
 }
 
-    .main h2,p  {
-        overflow: hidden;
-        font-size: 20px;
-    }
 
-    .second h2,p{
-        overflow: hidden;
-        font-size: 20px;
-    }
-
-   
-   
-    .footer h1,p{
-       
-        font-size: 20px;
-    }
-  }
-
-
-
-  /*Mobile*/
+/*Mobile*/
 
 @media (max-width: 500px) {
-.grid {
-    display: block;
-    
-}
-
-.tabContent {
-    padding: 30px 0px;
-   
-}
-.tabContent a {
-    margin: 0px;
-}
-
-.tabContent h3 {
-    font-size: 16px;
-}
-
-.tabContent p {
-    font-size: 12px;
-}
-
-
-
+    .grid {
+        display: block;
+    }
+    .tabContent {
+        padding: 30px 0px;
+    }
+    .tabContent a {
+        margin: 0px;
+    }
+    .tabContent h3 {
+        font-size: 16px;
+    }
+    .tabContent p {
+        font-size: 12px;
+    }
     .navbar {
         height: 110px;
-        position:relative;
-        
-    } 
-
+        position: relative;
+    }
     .navbar .flex {
         flex-direction: row;
     }
-
     .navbar ul {
         padding: 10px;
         font-size: 10px;
-        background-color: rgba(0,0,0,0.1);
+        background-color: rgba(0, 0, 0, 0.1);
     }
-
-
     .navbar h1 {
-      font-size: 20px;
+        font-size: 20px;
     }
-
-   .showcase {
-     
-       text-align: center;
-   }
-
-
-   
-
-
+    .showcase {
+        text-align: center;
+    }
     .page-form .form {
         margin: 5px 0px;
-
     }
-
-    
     .page-form h2 {
         font-size: 20px;
     }
-
-   
-.page-form input[type='email'],
-.page-form input[type='text'] {
-    width: 100px;
-    font-size: 10px;
-}
-
-    .main h2,p  {
+    .page-form input[type='email'],
+    .page-form input[type='text'] {
+        width: 100px;
+        font-size: 10px;
+    }
+    .main h2,
+    p {
         overflow: hidden;
         font-size: 20px;
     }
-
     .tabContent {
-       text-align: center;
+        text-align: center;
     }
-
     .tabContent h2 {
         font-size: 14px;
     }
-
-    .second h2,p{
+    .second h2,
+    p {
         overflow: hidden;
         font-size: 20px;
     }
-
     .grid-2 {
         display: inline-block;
     }
-
-  
-    .finalTab {
-        height: 160%;
-    }
-
     .finalTab .flex {
         padding: 0px;
     }
-
     .finalTab .card {
-       
         width: 100px;
         height: 120px;
         font-size: 10px;
-        padding:5px;
-        
+        padding: 5px;
     }
-
     .finalTab .card p {
         font-size: 12px;
     }
-
-
-    
-    .footer h1,p{
-       
+    .footer h1,
+    p {
         font-size: 20px;
     }
-
     .links {
         display: flex;
     }
-  }
-
-
-  
- 
+    .cardContainer {
+        gap: 0px;
+    }
+}
