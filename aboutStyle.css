@@ -12,7 +12,7 @@
     text-align: center;
     width: 100%;
     color: white;
-    padding: 100px;
+    padding: 10%;
     background-image: linear-gradient(90deg, #05c5bb, #aceff8);
 }
 
@@ -26,8 +26,8 @@
 }
 
 .imgContainer {
-    margin: auto;
-    width: 70%;
+    margin: 0 auto;
+    width: 100%;
     text-align: center;
 }
 
@@ -75,9 +75,8 @@
 
 .aboutImg img {
     cursor: pointer;
-    width: 100%;
     border-radius: 5px;
-    width: 300px;
+    width: 440px;
 }
 
 .aboutFeatures {
@@ -125,8 +124,14 @@
 }
 
 @media (max-width: 500px) {
+    .imgContainer {}
     .aboutImg img {
         margin: 10px 0px;
         width: 100%;
+    }
+    .aboutText {
+        text-align: center;
+        margin: 0px;
+        width: auto;
     }
 }
